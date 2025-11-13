@@ -1,0 +1,106 @@
+/* UI-AutoTest2 page styles converted from Figma MCP React+Tailwind */
+
+:root {
+  --neutral-gray-900: #111111;
+  --neutral-gray-700: #cccccc;
+  --neutral-gray-300: #dfdfdf;
+  --const-white: #ffffff;
+  --primary-600: #007aff;
+  --secondary-orange: #ff9500;
+  --radius-base: 8px;
+  --radius-mini: 4px;
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: var(--font-family); background: var(--const-white); }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: flex-start;
+  padding: 57px 24px;
+  min-height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 240px;
+}
+
+.form-item__label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--neutral-gray-900);
+}
+
+.input {
+  width: 100%;
+  height: 32px;
+  border: 1px solid var(--neutral-gray-300);
+  border-radius: var(--radius-base);
+  background: var(--const-white);
+  padding: 0 16px;
+  font-size: 14px;
+  color: var(--neutral-gray-900);
+}
+.input::placeholder { color: var(--neutral-gray-700); }
+.input:focus { outline: none; border-color: var(--primary-600); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 16px;
+  border-radius: var(--radius-mini);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.06s;
+}
+.btn:active { transform: scale(0.98); }
+
+.btn--primary {
+  background: var(--primary-600);
+  color: var(--const-white);
+}
+.btn--primary:hover { filter: brightness(1.1); }
+
+.btn--default {
+  background: #f5f5f5; /* neutral-gray-100 */
+  color: var(--neutral-gray-900);
+}
+.btn--default:hover { border: 1px solid var(--neutral-gray-300); }
+
+.card {
+  width: 330px;
+  background: var(--const-white);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+  padding: 23px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--neutral-gray-900);
+}
+.card__text { font-size: 14px; font-weight: 400; color: var(--neutral-gray-900); }
+
+.btn-group { display: flex; gap: 16px; justify-content: flex-end; }

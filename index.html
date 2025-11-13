@@ -1,39 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI Components Demo</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UI-AutoTest2 页面</title>
+    <link rel="stylesheet" href="ui_autotest2.css" />
   </head>
   <body>
-    <div class="container">
-      <form class="form">
-        <div class="form-item">
-          <label class="label">Full Name</label>
-          <input type="text" class="input" placeholder="please enter" />
+    <main class="page" data-node-id="167:11" aria-label="UI Components Demo">
+      <section class="form" data-node-id="167:12">
+        <div class="form-item" data-node-id="167:13">
+          <label class="form-item__label" for="fullName">Full Name</label>
+          <input id="fullName" class="input" type="text" placeholder="please enter" />
         </div>
-        <div class="form-item">
-          <label class="label">Phone Number</label>
-          <input type="text" class="input" placeholder="please enter" />
+        <div class="form-item" data-node-id="157:13">
+          <label class="form-item__label" for="phone">Phone Number</label>
+          <input id="phone" class="input" type="tel" placeholder="please enter" />
         </div>
-        <button type="submit" class="button primary">Submit</button>
-      </form>
+        <button id="submitBtn" class="btn btn--primary" type="button" data-node-id="167:15">Submit</button>
+      </section>
 
-      <div class="card">
-        <div class="card-content">
-          <h1 class="heading">Heading</h1>
-          <p class="body-text">Oops! There is something getting wrong!</p>
+      <section class="card" data-node-id="167:16">
+        <div>
+          <h1 class="card__title" data-node-id="167:18">Heading</h1>
+          <p class="card__text" data-node-id="167:19">Oops! There is something getting wrong!</p>
         </div>
-        <div class="button-group">
-          <button class="button default">button</button>
-          <button class="button primary">button</button>
+        <div class="btn-group" data-node-id="167:20">
+          <button class="btn btn--default" type="button" aria-label="Default Button">button</button>
+          <button class="btn btn--primary" type="button" aria-label="Secondary Button" data-node-id="167:22">button</button>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+
+    <script src="ui_autotest2.js"></script>
   </body>
 </html>
